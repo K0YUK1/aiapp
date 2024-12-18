@@ -18,20 +18,22 @@
     </style>
 </head>
 <body>
-    <h1>TODOリスト</h1>
+    <h1>見たい番組リスト</h1>
     
     <!-- TODOを追加するためのフォーム -->
     <form id="todoForm" class="todo-form">
-        <input type="text" id="todoInput" placeholder="新しいTODOを入力..." required>
+        <h2>▼地上波</h2>
+        <input type="text" id="todoInput" placeholder="番組名を入力" required>
+        <input type="date" name="example" value="2024-12-18">
         <button type="submit">追加</button>
-    </form>
+    </form->
 
     <!-- TODOリストを表示する場所 -->
     <ul id="todoList"></ul>
 
     <script>
         // APIのベースURL：実際のAPIサーバーのアドレス
-        const API_URL = 'http://localhost:8000/todos';
+        const API_URL = 'http://52.194.224.173:8000/todos';
         
         /**
          * APIとの通信を行う汎用関数
